@@ -27,7 +27,7 @@
 /* Stop animation on hover */
 .animated-border:hover {
   animation: none;
-  box-shadow: 0 0 0px red;
+  box-shadow: 0 0 0px black;
 }
 
 

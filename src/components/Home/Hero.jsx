@@ -8,7 +8,7 @@ const Hero = () => {
                         <div>
                               <h6 className='font-light '>50% SALE <span className='text-secondary-bgc'>OFF</span></h6>
                               <h1 className='text-5xl font-semibold py-2  '>NEW FASHION COLLECTION</h1>
-                              <button className="animated-border hover:bg-secondary-bgc hover:text-white border text-sm  rounded-tr-2xl rounded-bl-2xl shadow-md  py-3 px-6 mt-5">
+                              <button className="animated-border bg-black border-none text-white hover:bg-secondary-bgc hover:text-white border text-sm  rounded-tr-2xl rounded-bl-2xl shadow-md  py-3 px-6 mt-5">
                                     SHOP NOW
                               </button>
                         </div>

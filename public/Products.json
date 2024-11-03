@@ -8,7 +8,7 @@
           "https://example.com/images/product1_img4.jpg"
         ],
         "title": "Classic Men's Shirt",
-        "price": "1200",
+        "price": 1200,
         "stock_quantity": 20,
         "size_variants": [
           { "size": "M", "quantity": 5 },
@@ -20,7 +20,9 @@
         "product_quality": "High",
         "product_name": "Shirt",
         "size_list_img": "https://example.com/images/sizes1.jpg",
-        "product_type": "jents"
+        "product_type": "jents",
+        "discount": 10,
+        "have_product": "In Stock"
       },
       {
         "id": 2,
@@ -31,7 +33,7 @@
           "https://example.com/images/product2_img4.jpg"
         ],
         "title": "Stylish Men's T-Shirt",
-        "price": "800",
+        "price": 800,
         "stock_quantity": 15,
         "size_variants": [
           { "size": "M", "quantity": 4 },
@@ -43,7 +45,9 @@
         "product_quality": "Premium",
         "product_name": "T-Shirt",
         "size_list_img": "https://example.com/images/sizes2.jpg",
-        "product_type": "jents"
+        "product_type": "jents",
+        "discount": 15,
+        "have_product": "Out Of Stock"
       },
       {
         "id": 3,
@@ -54,7 +58,7 @@
           "https://example.com/images/product3_img4.jpg"
         ],
         "title": "Elegant Men's Panjabi",
-        "price": "1500",
+        "price": 1500,
         "stock_quantity": 10,
         "size_variants": [
           { "size": "M", "quantity": 3 },
@@ -66,7 +70,9 @@
         "product_quality": "High",
         "product_name": "Panjabi",
         "size_list_img": "https://example.com/images/sizes3.jpg",
-        "product_type": "jents"
+        "product_type": "jents",
+        "discount": 5,
+        "have_product": "In Stock"
       },
       {
         "id": 4,
@@ -77,7 +83,7 @@
           "https://example.com/images/product4_img4.jpg"
         ],
         "title": "Casual Men's Pant",
-        "price": "1300",
+        "price": 1300,
         "stock_quantity": 12,
         "size_variants": [
           { "size": "M", "quantity": 4 },
@@ -89,7 +95,9 @@
         "product_quality": "Standard",
         "product_name": "Pant",
         "size_list_img": "https://example.com/images/sizes4.jpg",
-        "product_type": "jents"
+        "product_type": "jents",
+        "discount": 20,
+        "have_product": "Out Of Stock"
       },
       {
         "id": 5,
@@ -100,7 +108,7 @@
           "https://example.com/images/product5_img4.jpg"
         ],
         "title": "Ladies' 2-Piece Suit",
-        "price": "1800",
+        "price": 1800,
         "stock_quantity": 14,
         "size_variants": [
           { "size": "S", "quantity": 6 },
@@ -110,7 +118,9 @@
         "product_quality": "High",
         "product_name": "2piece",
         "size_list_img": "https://example.com/images/sizes5.jpg",
-        "product_type": "ladies"
+        "product_type": "ladies",
+        "discount": 10,
+        "have_product": "In Stock"
       },
       {
         "id": 6,
@@ -121,7 +131,7 @@
           "https://example.com/images/product6_img4.jpg"
         ],
         "title": "Elegant 3-Piece Dress",
-        "price": "2500",
+        "price": 2500,
         "stock_quantity": 8,
         "size_variants": [
           { "size": "S", "quantity": 4 },
@@ -131,7 +141,9 @@
         "product_quality": "Premium",
         "product_name": "3piece",
         "size_list_img": "https://example.com/images/sizes6.jpg",
-        "product_type": "ladies"
+        "product_type": "ladies",
+        "discount": 15,
+        "have_product": "Out Of Stock"
       },
       {
         "id": 7,
@@ -142,7 +154,7 @@
           "https://example.com/images/product7_img4.jpg"
         ],
         "title": "Traditional Saree",
-        "price": "3200",
+        "price": 3200,
         "stock_quantity": 10,
         "size_variants": [
           { "size": "Free Size", "quantity": 10 }
@@ -151,7 +163,9 @@
         "product_quality": "Premium",
         "product_name": "Saree",
         "size_list_img": "https://example.com/images/sizes7.jpg",
-        "product_type": "ladies"
+        "product_type": "ladies",
+        "discount": 25,
+        "have_product": "In Stock"
       },
       {
         "id": 8,
@@ -162,7 +176,7 @@
           "https://example.com/images/product8_img4.jpg"
         ],
         "title": "Women's Casual T-Shirt",
-        "price": "900",
+        "price": 900,
         "stock_quantity": 12,
         "size_variants": [
           { "size": "S", "quantity": 4 },
@@ -173,7 +187,9 @@
         "product_quality": "Standard",
         "product_name": "T-Shirt",
         "size_list_img": "https://example.com/images/sizes8.jpg",
-        "product_type": "ladies"
+        "product_type": "ladies",
+        "discount": 10,
+        "have_product": "Out Of Stock"
       },
       {
         "id": 9,
@@ -184,7 +200,7 @@
           "https://example.com/images/product9_img4.jpg"
         ],
         "title": "Kids' Combo Pack",
-        "price": "1000",
+        "price": 1000,
         "stock_quantity": 20,
         "size_variants": [
           { "size": "S", "quantity": 10 },
@@ -194,7 +210,9 @@
         "product_quality": "Standard",
         "product_name": "Combo",
         "size_list_img": "https://example.com/images/sizes9.jpg",
-        "product_type": "child"
+        "product_type": "child",
+        "discount": 5,
+        "have_product": "In Stock"
       },
       {
         "id": 10,
@@ -204,18 +222,20 @@
           "https://example.com/images/product10_img3.jpg",
           "https://example.com/images/product10_img4.jpg"
         ],
-        "title": "Boys' Combo Set",
-        "price": "1100",
-        "stock_quantity": 15,
+        "title": "Kids' Winter Jacket",
+        "price": 2000,
+        "stock_quantity": 8,
         "size_variants": [
-          { "size": "XS", "quantity": 5 },
-          { "size": "S", "quantity": 5 },
-          { "size": "M", "quantity": 5 }
+          { "size": "M", "quantity": 4 },
+          { "size": "L", "quantity": 4 }
         ],
-        "color": "Blue",
+        "color": "Gray",
         "product_quality": "High",
-        "product_name": "Combo",
+        "product_name": "Jacket",
         "size_list_img": "https://example.com/images/sizes10.jpg",
-        "product_type": "child"
-      }    
-]
+        "product_type": "child",
+        "discount": 20,
+        "have_product": "Out Of Stock"
+      }
+    ]
+    

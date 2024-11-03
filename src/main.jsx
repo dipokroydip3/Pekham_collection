@@ -9,7 +9,7 @@ import {
 import './index.css'
 import Root from './Root';
 import Home_pages from './components/Home/Home_pages';
-import Auth_Provider from './components/Auth_Provider';
+import Auth_Provider from './components/AuthProvider';
 // import App from './App.jsx'
 
 const router = createBrowserRouter([
