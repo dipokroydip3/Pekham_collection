@@ -9,13 +9,14 @@ import {
 import './index.css'
 import Root from './Root';
 import Home_pages from './components/Home/Home_pages';
+import Auth_Provider from './components/Auth_Provider';
 // import App from './App.jsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-    children:[
+    children: [
       {
         path: "/",
         element: <Home_pages></Home_pages>
@@ -26,6 +27,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <Auth_Provider>
+      <RouterProvider router={router} />
+    </Auth_Provider>
   </StrictMode>,
 )
