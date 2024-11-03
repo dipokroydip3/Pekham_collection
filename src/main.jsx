@@ -8,12 +8,19 @@ import {
 
 import './index.css'
 import Root from './Root';
+import Home_pages from './components/Home/Home_pages';
 // import App from './App.jsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root></Root>
+    element: <Root></Root>,
+    children:[
+      {
+        path: "/",
+        element: <Home_pages></Home_pages>
+      }
+    ]
   },
 ]);
 
