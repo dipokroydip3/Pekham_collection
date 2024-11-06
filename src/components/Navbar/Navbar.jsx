@@ -48,7 +48,8 @@ const Navbar = () => {
                   {/* Navbar */}
                   <div className="border relative shadow-md xl:border-none">
                         <div className="flex w-11/12 m-auto py-2 items-center justify-between">
-                              <i className="font-bold xl:text-xl"><span className="text-red-600">P</span>EKHAM<span className="text-red-600">C</span>OLLECTION</i>
+                              {/* <i className="font-bold xl:text-xl"><span className="text-red-600">P</span>EKHAM<span className="text-red-600">C</span>OLLECTION</i> */}
+                              <h1 className="text-2xl font-semibold">Aram<span className="text-secondary-bgc">F</span>ashion</h1>
                               
                               <ul className={`absolute md:static xl:static xl:flex md:flex bg-black md:bg-white xl:bg-white md:text-black xl:text-black md:py-2 py-5 xl:py-2 md:items-center  top-10 xl:top-0 text-white xl:gap-8  text-xs space-y-5 md:space-y-0 xl:space-y-0  px-3 xl:px-0  xl:text-sm  transition-transform duration-300 ease-in-out ${navToggle ? "translate-x-0 -left-1" : "-translate-x-full md:translate-x-0 xl:translate-x-0 -left-4"}`}>
                                     <li className="hover:bg-red-600 xl:hover:bg-white xl:hover:text-red-600 md:hover:bg-white md:hover:text-red-600 transition duration-300  flex items-center px-3 xl:px-0 rounded h-6 xl:h-0 w-full xl:w-auto cursor-pointer">HOME</li>

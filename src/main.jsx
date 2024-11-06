@@ -10,6 +10,7 @@ import './index.css'
 import Root from './Root';
 import Home_pages from './components/Home/Home_pages';
 import Auth_Provider from './components/AuthProvider';
+import Product_details from './components/Pages/Product_details';
 // import App from './App.jsx'
 
 const router = createBrowserRouter([
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home_pages></Home_pages>
+      },
+      {
+        path: "/details",
+        element: <Product_details></Product_details>
       }
     ]
   },

@@ -8,7 +8,7 @@ import { CiHeart, CiZoomIn } from 'react-icons/ci';
 const All_product = () => {
 
       const { allData } = useContext(PekhamContext)
-      const { id, img, title, price } = allData;
+      // const { id, img, title, price } = allData;
       return (
             <div className='grid w-11/12 m-auto gap-5 grid-cols-1 md:grid-cols-3 xl:grid-cols-12 pt-20'>
                   <div className='py-5 col-span-1 md:col-span-1 xl:col-span-3'>
@@ -22,7 +22,7 @@ const All_product = () => {
                                     <option value="ladies">ladies</option>
                                     <option value="child">kids</option>
                               </select>
-                              <select className='' >
+                              <select className='' > 
                                     <option value="default" >default</option>
                                     <option value="jents">jents</option>
                                     <option value="child">kids</option>
