@@ -8,7 +8,7 @@ import { CiHeart, CiZoomIn } from 'react-icons/ci';
 const All_product = () => {
 
       const { allData } = useContext(PekhamContext)
-      // const { id, img, title, price } = allData;
+      const { id, img, title, price } = allData;
       return (
             <div className='grid w-11/12 m-auto gap-5 grid-cols-1 md:grid-cols-3 xl:grid-cols-12 pt-20'>
                   <div className='py-5 col-span-1 md:col-span-1 xl:col-span-3'>
@@ -36,7 +36,7 @@ const All_product = () => {
                         <div className='grid gap-7 md:grid-cols-2 xl:grid-cols-3'>
                               {
                                     allData.map(data => <div key={data.id}>
-                                          <div className="group">
+                                          <Link to={`/details/${data.id}`} className="group">
                                                 <div className="bg-primary-bgc cursor-pointer relative overflow-hidden">
                                                       <img className="w-full h-80 md:h-72 xl:h-80 px-8 py-5 transition duration-300 ease-in-out group-hover:scale-125" src={data.images} alt="" />
                                                       <div className="bg-secondary-bgc absolute right-0 top-0 inline-block text-white px-3">
@@ -60,7 +60,7 @@ const All_product = () => {
                                                       <h2>{data.title}</h2>
                                                       <h2 className="font-semibold">Tk: {data.price}</h2>
                                                 </div>
-                                          </div>
+                                          </Link>
 
                                     </div>)
                               }

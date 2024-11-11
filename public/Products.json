@@ -11,10 +11,10 @@
     "price": 1200,
     "stock_quantity": 20,
     "size_variants": [
-      { "size": "M", "quantity": 5 },
-      { "size": "L", "quantity": 5 },
-      { "size": "XL", "quantity": 5 },
-      { "size": "XXL", "quantity": 5 }
+      { "id":1, "size": "M", "quantity": 5 },
+      { "id":2, "size": "L", "quantity": 5 },
+      { "id":3, "size": "XL", "quantity": 5 },
+      { "id":4, "size": "XXL", "quantity": 5 }
     ],
     "color": "Blue",
     "product_quality": "High",
@@ -36,10 +36,10 @@
     "price": 800,
     "stock_quantity": 15,
     "size_variants": [
-      { "size": "M", "quantity": 4 },
-      { "size": "L", "quantity": 4 },
-      { "size": "XL", "quantity": 4 },
-      { "size": "XXL", "quantity": 3 }
+      { "id":1, "size": "M", "quantity": 4 },
+      { "id":2, "size": "L", "quantity": 4 },
+      { "id":3, "size": "XL", "quantity": 4 },
+      { "id":4, "size": "XXL", "quantity": 3 }
     ],
     "color": "Red",
     "product_quality": "Premium",
@@ -61,10 +61,10 @@
     "price": 1500,
     "stock_quantity": 10,
     "size_variants": [
-      { "size": "M", "quantity": 3 },
-      { "size": "L", "quantity": 3 },
-      { "size": "XL", "quantity": 2 },
-      { "size": "XXL", "quantity": 2 }
+      { "id":1, "size": "M", "quantity": 3 },
+      { "id":2, "size": "L", "quantity": 3 },
+      { "id":3, "size": "XL", "quantity": 2 },
+      { "id":4, "size": "XXL", "quantity": 2 }
     ],
     "color": "Green",
     "product_quality": "High",
@@ -86,10 +86,10 @@
     "price": 1300,
     "stock_quantity": 12,
     "size_variants": [
-      { "size": "M", "quantity": 4 },
-      { "size": "L", "quantity": 4 },
-      { "size": "XL", "quantity": 2 },
-      { "size": "XXL", "quantity": 2 }
+      { "id":1, "size": "M", "quantity": 4 },
+      { "id":2, "size": "L", "quantity": 4 },
+      { "id":3, "size": "XL", "quantity": 2 },
+      { "id":4, "size": "XXL", "quantity": 2 }
     ],
     "color": "Black",
     "product_quality": "Standard",
@@ -111,8 +111,8 @@
     "price": 1800,
     "stock_quantity": 14,
     "size_variants": [
-      { "size": "S", "quantity": 6 },
-      { "size": "M", "quantity": 8 }
+      { "id":1, "size": "S", "quantity": 6 },
+      { "id":2, "size": "M", "quantity": 8 }
     ],
     "color": "Pink",
     "product_quality": "High",
@@ -134,8 +134,8 @@
     "price": 2000,
     "stock_quantity": 18,
     "size_variants": [
-      { "size": "S", "quantity": 9 },
-      { "size": "M", "quantity": 9 }
+      { "id":1, "size": "S", "quantity": 9 },
+      { "id":2, "size": "M", "quantity": 9 }
     ],
     "color": "Purple",
     "product_quality": "Premium",
@@ -157,7 +157,7 @@
     "price": 2500,
     "stock_quantity": 10,
     "size_variants": [
-      { "size": "Free Size", "quantity": 10 }
+      { "id":1, "size": "Free Size", "quantity": 10 }
     ],
     "color": "Red",
     "product_quality": "High",
@@ -179,8 +179,8 @@
     "price": 1400,
     "stock_quantity": 10,
     "size_variants": [
-      { "size": "S", "quantity": 5 },
-      { "size": "M", "quantity": 5 }
+      { "id":1, "size": "S", "quantity": 5 },
+      { "id":2, "size": "M", "quantity": 5 }
     ],
     "color": "Yellow",
     "product_quality": "Standard",
@@ -202,8 +202,8 @@
     "price": 1000,
     "stock_quantity": 30,
     "size_variants": [
-      { "size": "S", "quantity": 15 },
-      { "size": "M", "quantity": 15 }
+      { "id":1, "size": "S", "quantity": 15 },
+      { "id":2, "size": "M", "quantity": 15 }
     ],
     "color": "Blue",
     "product_quality": "Premium",
@@ -225,8 +225,8 @@
     "price": 1700,
     "stock_quantity": 8,
     "size_variants": [
-      { "size": "S", "quantity": 4 },
-      { "size": "M", "quantity": 4 }
+      { "id":1, "size": "S", "quantity": 4 },
+      { "id":2, "size": "M", "quantity": 4 }
     ],
     "color": "Gray",
     "product_quality": "High",
