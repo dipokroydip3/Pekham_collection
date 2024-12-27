@@ -47,13 +47,13 @@ const Navbar = () => {
                   </div>
 
                   {/* Navbar */}
-                  <div className="border relative shadow-md xl:border-none">
+                  <div className="border relative shadow-md xl:border-none  bg-white">
                         <div className="flex w-11/12 m-auto py-2 items-center justify-between">
                               {/* <i className="font-bold xl:text-xl"><span className="text-red-600">P</span>EKHAM<span className="text-red-600">C</span>OLLECTION</i> */}
                               <Link to={'/'} className="text-2xl font-semibold">Aram<span className="text-secondary-bgc">F</span>ashion</Link>
-                              
-                              <ul className={`absolute md:static xl:static xl:flex md:flex bg-black md:bg-white xl:bg-white md:text-black xl:text-black md:py-2 py-5 xl:py-2 md:items-center  top-10 xl:top-0 text-white xl:gap-8  text-xs space-y-5 md:space-y-0 xl:space-y-0  px-3 xl:px-0  xl:text-sm  transition-transform duration-300 ease-in-out ${navToggle ? "translate-x-0 -left-1" : "-translate-x-full md:translate-x-0 xl:translate-x-0 -left-4"}`}>
-                                    <Link to={'/'} className="hover:bg-red-600 xl:hover:bg-white xl:hover:text-red-600 md:hover:bg-white md:hover:text-red-600 transition duration-300  flex items-center px-3 xl:px-0 rounded h-6 xl:h-0 w-full xl:w-auto cursor-pointer">HOME</Link>
+
+                              <ul className={`absolute md:static xl:static xl:flex md:flex bg-black md:bg-white xl:bg-white md:text-black xl:text-black md:py-2 py-5 xl:py-2 md:items-center top-10 xl:top-0 text-white xl:gap-8 text-xs space-y-5 md:space-y-0 xl:space-y-0 px-3 xl:px-0 xl:text-sm transition-transform duration-300 ease-in-out ${navToggle ? "translate-x-0 -left-1" : "-translate-x-full md:translate-x-0 xl:translate-x-0 -left-4"}`}>
+                                    <Link to={'/'} className="hover:bg-red-600 xl:hover:bg-white xl:hover:text-red-600 md:hover:bg-white md:hover:text-red-600 transition duration-300 flex items-center px-3 xl:px-0 rounded h-6 xl:h-0 w-full xl:w-auto cursor-pointer">HOME</Link>
                                     <li className="hover:bg-red-600 xl:hover:bg-white xl:hover:text-red-600 md:hover:bg-white md:hover:text-red-600 transition duration-300 flex items-center px-3 xl:px-0 rounded h-6 xl:h-auto w-full xl:w-auto cursor-pointer">SHOP</li>
                                     <li className="hover:bg-red-600 xl:hover:bg-white xl:hover:text-red-600 md:hover:bg-white md:hover:text-red-600 transition duration-300 flex items-center px-3 xl:px-0 rounded h-6 xl:h-auto w-full xl:w-auto cursor-pointer">BLOG</li>
                                     <li className="hover:bg-red-600 xl:hover:bg-white xl:hover:text-red-600 md:hover:bg-white md:hover:text-red-600 transition duration-300 flex items-center px-3 xl:px-0 rounded h-6 xl:h-auto w-full xl:w-auto cursor-pointer">CONTACT</li>
@@ -63,11 +63,17 @@ const Navbar = () => {
                               </ul>
 
                               <div className="flex gap-3 xl:gap-5">
-                                    <div className="xl:text-xl">
+                                    <div className="xl:text-2xl relative ">
                                           <MdFavoriteBorder />
+                                          <div className="bg-secondary-bgc flex justify-center absolute h-4 w-4  -top-1 -right-2 items-center rounded-full text-white">
+                                                <span className="text-[12px] font-semibold p-1 ">2</span>
+                                          </div>
                                     </div>
-                                    <div className="xl:text-xl">
+                                    <div className="xl:text-2xl relative">
                                           <AiOutlineShoppingCart />
+                                          <div className="bg-secondary-bgc flex justify-center absolute h-4 w-4  -top-1 -right-2 items-center rounded-full text-white">
+                                                <span className="text-[12px] font-semibold p-1 ">5</span>
+                                          </div>
                                     </div>
                                     <div onClick={() => setNavToggle(!navToggle)} className="xl:hidden md:hidden">
                                           <FaBars />
@@ -75,6 +81,7 @@ const Navbar = () => {
                               </div>
                         </div>
                   </div>
+
             </div>
       );
 };

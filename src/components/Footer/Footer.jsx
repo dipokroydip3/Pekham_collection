@@ -6,7 +6,7 @@
 const Footer = () => {
       return (
             <div>
-                  <footer className="bg-gray-100 text-gray-700 py-8 px-4 border-t border-l border-gray-300">
+                  <footer className="bg-black text-white mt-20 py-8 px-4 border-t border-l border-gray-300">
                         <div className="max-w-7xl mx-auto flex flex-wrap gap-6 justify-between">
                               {/* Logo and About Section */}
                               <div className="w-full sm:w-1/2 lg:w-1/4">
@@ -26,8 +26,8 @@ const Footer = () => {
                                     </h3>
                                     <ul className="text-sm">
                                           <li>Email: support@aramfashion.com</li>
-                                          <li>Phone: +880 123 456 789</li>
-                                          <li>Address: 12 Aram Street, Fashion City, Dhaka</li>
+                                          <li>Phone: +880 1763 111 668</li>
+                                          <li>Address: 5100 Bus Stand, Thakurgaon Sadar, Thakurgaon</li>
                                     </ul>
                               </div>
 
@@ -46,7 +46,7 @@ const Footer = () => {
                                     </ul>
                               </div>
 
-                              {/* Follow Us Section */}
+                              {/* Follow Us Section */} 
                               <div className="w-full sm:w-1/2 lg:w-1/4">
                                     <h3 className="text-lg font-semibold border-b border-gray-400 pb-2 mb-4">
                                           Follow Us
