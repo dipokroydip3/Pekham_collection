@@ -36,7 +36,7 @@ const Navbar = () => {
                               <div className="flex gap-3 xl:gap-5">
                                     <div className="flex items-center">
                                           <CiUser />
-                                          <h3 className="text-xs xl:text-sm">Log in</h3>
+                                          <Link to={"login"}><h3 className="text-xs xl:text-sm">Log in</h3></Link>
                                     </div>
                                     <div className="flex items-center">
                                           <IoIosHelpCircleOutline />
@@ -54,9 +54,9 @@ const Navbar = () => {
 
                               <ul className={`absolute md:static xl:static xl:flex md:flex bg-black md:bg-white xl:bg-white md:text-black xl:text-black md:py-2 py-5 xl:py-2 md:items-center top-10 xl:top-0 text-white xl:gap-8 text-xs space-y-5 md:space-y-0 xl:space-y-0 px-3 xl:px-0 xl:text-sm transition-transform duration-300 ease-in-out ${navToggle ? "translate-x-0 -left-1" : "-translate-x-full md:translate-x-0 xl:translate-x-0 -left-4"}`}>
                                     <Link to={'/'} className="hover:bg-red-600 xl:hover:bg-white xl:hover:text-red-600 md:hover:bg-white md:hover:text-red-600 transition duration-300 flex items-center px-3 xl:px-0 rounded h-6 xl:h-0 w-full xl:w-auto cursor-pointer">HOME</Link>
-                                    <li className="hover:bg-red-600 xl:hover:bg-white xl:hover:text-red-600 md:hover:bg-white md:hover:text-red-600 transition duration-300 flex items-center px-3 xl:px-0 rounded h-6 xl:h-auto w-full xl:w-auto cursor-pointer">SHOP</li>
-                                    <li className="hover:bg-red-600 xl:hover:bg-white xl:hover:text-red-600 md:hover:bg-white md:hover:text-red-600 transition duration-300 flex items-center px-3 xl:px-0 rounded h-6 xl:h-auto w-full xl:w-auto cursor-pointer">BLOG</li>
-                                    <li className="hover:bg-red-600 xl:hover:bg-white xl:hover:text-red-600 md:hover:bg-white md:hover:text-red-600 transition duration-300 flex items-center px-3 xl:px-0 rounded h-6 xl:h-auto w-full xl:w-auto cursor-pointer">CONTACT</li>
+                                    <Link to={"/shop"}><li className="hover:bg-red-600 xl:hover:bg-white xl:hover:text-red-600 md:hover:bg-white md:hover:text-red-600 transition duration-300 flex items-center px-3 xl:px-0 rounded h-6 xl:h-auto w-full xl:w-auto cursor-pointer">SHOP</li></Link>
+                                    <Link to={"/blog"}><li className="hover:bg-red-600 xl:hover:bg-white xl:hover:text-red-600 md:hover:bg-white md:hover:text-red-600 transition duration-300 flex items-center px-3 xl:px-0 rounded h-6 xl:h-auto w-full xl:w-auto cursor-pointer">BLOG</li></Link>
+                                    <Link to={"contact"}><li className="hover:bg-red-600 xl:hover:bg-white xl:hover:text-red-600 md:hover:bg-white md:hover:text-red-600 transition duration-300 flex items-center px-3 xl:px-0 rounded h-6 xl:h-auto w-full xl:w-auto cursor-pointer">CONTACT</li></Link>
                                     <div className="text-[18px] absolute xl:hidden md:hidden -top-5 right-1" onClick={() => setNavToggle(!navToggle)}>
                                           <RxCross1 />
                                     </div>

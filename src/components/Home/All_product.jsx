@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { PekhamContext } from '../AuthProvider';
 import { Link } from 'react-router-dom';
 import { IoSearchOutline } from 'react-icons/io5';
@@ -8,7 +8,26 @@ import { CiHeart, CiZoomIn } from 'react-icons/ci';
 const All_product = () => {
 
       const { allData } = useContext(PekhamContext)
-      const { id, img, title, price } = allData;
+      const [cart, setCart] = useState([]);
+      // const { id, img, title, price } = allData;
+
+      // <-----------------------set product local storage--------------->
+
+      useEffect(() => {
+            const storedCart = JSON.parse(localStorage.getItem('cart')) || [];
+            setCart(storedCart);
+      }, []);
+
+
+      const setDataLocalstorage = (product) => {
+            const updatedCart = [...cart, product];
+            setCart(updatedCart);
+
+            // Local Storage-এ কার্ট আপডেট করা
+            localStorage.setItem('cart', JSON.stringify(updatedCart));
+      }
+
+
       return (
             <div className='grid w-11/12 m-auto gap-5 grid-cols-1 md:grid-cols-3 xl:grid-cols-12 pt-20'>
                   <div className='py-5 col-span-1 md:col-span-1 xl:col-span-3'>
@@ -22,7 +41,7 @@ const All_product = () => {
                                     <option value="ladies">ladies</option>
                                     <option value="child">kids</option>
                               </select>
-                              <select className='' > 
+                              <select className='' >
                                     <option value="default" >default</option>
                                     <option value="jents">jents</option>
                                     <option value="child">kids</option>
@@ -45,7 +64,7 @@ const All_product = () => {
 
                                                       {/* <!-- Icon Container with Smooth Slide Animation --> */}
                                                       <div className="text-2xl -right-16 space-y-5 absolute bottom-0 px-1 py-3 text-white bg-opacity-10 bg-black transition-all duration-300 ease-in-out group-hover:right-0">
-                                                            <div className="p-1 bg-white rounded-full text-black cursor-pointer hover:text-white hover:bg-secondary-bgc transform hover:scale-110 transition duration-200 ease-in-out">
+                                                            <div onClick={ () => setDataLocalstorage(`${data.id}`)} className="p-1 bg-white rounded-full text-black cursor-pointer hover:text-white hover:bg-secondary-bgc transform hover:scale-110 transition duration-200 ease-in-out">
                                                                   <MdOutlineAddShoppingCart />
                                                             </div>
                                                             <div className="p-1 bg-white rounded-full text-black cursor-pointer hover:text-white hover:bg-secondary-bgc transform hover:scale-110 transition duration-200 ease-in-out">

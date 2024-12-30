@@ -11,6 +11,10 @@ import Root from './Root';
 import Home_pages from './components/Home/Home_pages';
 import Auth_Provider from './components/AuthProvider';
 import Product_details from './components/Pages/Product_details';
+import Login from './components/Pages/Login/Login';
+import Shop from './components/Pages/Shop/Shop';
+import Blog from './components/Pages/Blog/Blog';
+import Contact from './components/Pages/Contact/Contact';
 // import App from './App.jsx'
 
 const router = createBrowserRouter([
@@ -25,6 +29,22 @@ const router = createBrowserRouter([
       {
         path: "/details/:id",
         element: <Product_details></Product_details>
+      },
+      {
+        path: "/login",
+        element: <Login></Login>
+      },
+      {
+        path: "/shop",
+        element: <Shop></Shop>,
+      },
+      {
+        path: "/blog",
+        element: <Blog></Blog>,
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact>
       }
     ]
   },
